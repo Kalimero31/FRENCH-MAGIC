@@ -1,0 +1,228 @@
+body {
+    background-image: url("./images/fond.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
+
+#presentation {
+    position: relative;
+    top: 340px;
+}
+h1 {
+    text-align: center;
+    font-family : "Century Gothic", Verdana;
+    color: aliceblue;
+    font-size: 75px;
+    /* top : 100%; */
+    /* position: absolute  ; */
+    /* margin: auto; */
+    /* top : 37%; */
+    /* left: 50%; */
+}
+
+#barre {
+    /* align : center; */
+    /* object-position: 100% 50%; */
+    /* position: absolute; */
+    /* left: 40%; */
+    /* top: -100%; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3 {
+    text-align: center;
+    font-family : "Century Gothic", Verdana;
+    color: aliceblue;
+    font-size: 25px;
+}
+#logo {
+    position: absolute;
+    left: 28%;
+    top:20%;
+    width: 10%;
+    margin: 0;
+}
+#logo2 {
+    position: absolute;
+    left: 28%;
+    top:1%;
+    width: 10%;
+    margin: 0;
+}
+#logoMLS {
+    position: absolute;
+    left: 66%;
+    top:0%;
+    width: 5%;
+    margin: 0;
+}
+    header {
+    margin: 0;
+}
+#fondTransi {
+    position: absolute;
+    left: 0;
+    top :-5%;
+    width: 100%;
+    margin: 0;
+}
+#fleche {
+    animation-duration: 3s;
+    animation-name: clignoter;
+    animation-iteration-count: infinite;
+    transition: none;
+    position: absolute;
+    left: 47.8%;
+    top: 92%;
+    width: 80px;
+}
+@keyframes clignoter {
+    0%   { opacity:1; }
+    40%   {opacity:0; }
+    100% { opacity:1; }
+  }
+.cadreImage {
+    /* border: 10px solid rgb(36, 33, 33); */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 81.2%;
+    background-color: rgb(0, 0, 0);
+    /* background-image: url("./images/1.png"); */
+    z-index: -1;
+    
+}
+#demicadre {
+    transform-origin: top right;
+    position: relative;
+    top : -21.4%;
+    
+    right: 0%;
+    margin: 0;
+    width: 100%;
+}
+#imageAcc {
+    position: relative;
+    top: -120%;
+    left: 8%;
+    opacity: 0%;
+    transition: 0.5s;
+}
+#skin {
+    position: relative;
+    transform-origin: top right;
+    left: 45%;
+    top: -27%;
+    width: 55%;
+}
+
+#description {
+    position: absolute;
+    top: 33%;
+    left: 10%;
+}
+#barre2 {
+    /* align : center; */
+    /* object-position: 100% 50%; */
+    /* position: absolute; */
+    /* left: 40%; */
+    /* top: -100%; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn {
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    top:-1650px;
+    left: 395px;
+    /* top: 80px;
+    left: 850px; */
+    height: 50px;
+    width: 50px;
+    display:inline-block;
+    position: relative;
+    
+    color: rgb(5, 5, 5);
+    font-size: 30px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    /* padding: 15px 50px; */
+    /* text-align: center; */
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    background-color: #ffffff;  
+    background-repeat: no-repeat;
+    transition: background-position-y ease-in-out 250ms;
+    z-index: 1;
+}
+
+img {
+    /* src : bonjour; */
+    
+}
+
+#pp {
+    /* background-image: url("images/fond.png"); */
+    background-size: 1900px 977px;
+    /* width: 1586px; */
+    /* height: 874px; */
+}
+
+#imagepp {
+    width: 1925px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-attachment: fixed;
+}
+
+
+nav {
+    background: rgba(48, 47, 47, 0.651);
+    position: fixed;
+    width: 100%;
+    height: 75px;
+    top : 0;
+    left : 0;
+}
+    ul {
+        display : flex;
+        align-items: center;
+        padding-left: 10px;
+    }
+.nomCollection {
+    position: relative;
+    top: auto;
+    left: 50%;
+    transition: 0.8s;
+    opacity: 0%;
+}
+
+#nomModele {
+    position: relative;
+    top: auto;
+    left: 50%;
+    transition: 0.8s;
+    opacity: 0%;
+    transition-delay: 0.1s;
+}
+
+.cadre2 {
+    /* border: 10px solid rgb(36, 33, 33); */
+    position: absolute;
+    top: 181.3%;
+    left:0 ;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    /* background-image: url("./images/1.png"); */
+    margin: 0;
+
+}
