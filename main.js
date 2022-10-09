@@ -1,6 +1,6 @@
 const div = document.querySelector('div');
-const btn1 = document.getElementById('1');
-const btn2 = document.getElementById('2');
+const btn1 = document.getElementById('b1');
+const btn2 = document.getElementById('b2');
 const transi = document.querySelector('.transition')
 const cadre = document.querySelector('.cadreImage');
 const acc = document.getElementById('imageAcc')
@@ -38,15 +38,16 @@ const collec = document.querySelector('.nomCollection')
 
 btn1.addEventListener('click',()=>{
     x-=1;
+    if (x==0) (x=5)
     // cadre.innerHTML = 
     acc.innerHTML = '<img src="./images/a' +x+ '.png" id = "skin"></img>';
-    pseudo.style.opacity="0%";
     pseudo.innerHTML= '<h3 >'+listePseudos[x]+'</h3>';
     
 })
 
 btn2.addEventListener('click',()=>{
     x+=1
+    if (x==5) (x=0);
     acc.innerHTML = '<img src="./images/a' +x+ '.png" id = "skin"></img>';
     
     pseudo.innerHTML= '<h3 >'+listePseudos[x]+'</h3>'
@@ -65,13 +66,13 @@ window.addEventListener('scroll',()=> {
         collec.style.opacity = "100%";
         pseudo.style.left = '0px';
         pseudo.style.opacity = "100%";
-        acc.style.left = '0px';
+        acc.style.right = '-45%';
         acc.style.opacity = "100%";}
     else {
         collec.style.left = '60%'
         collec.style.opacity="0%";
         pseudo.style.left = '60%'
         pseudo.style.opacity="0%";
-        acc.style.left = '8%';
-        acc.style.opacity = "100%";}})
+        acc.style.right = '-60%';
+        acc.style.opacity = "0%";}})
         
